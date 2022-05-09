@@ -21,13 +21,13 @@ if (cart_list != null) {
 <html>
 <head>
 <%@include file="/includes/head.jsp"%>
-<title>E-Commerce Cart</title>
+<title>Ropa Online</title>
 </head>
 <body>
 	<%@include file="/includes/navbar.jsp"%>
 
 	<div class="container">
-		<div class="card-header my-3">All Products</div>
+		<div class="card-header my-3">Todos Los Productos</div>
 		<div class="row">
 			<%
 			if (!products.isEmpty()) {
@@ -42,8 +42,8 @@ if (cart_list != null) {
 						<h6 class="price">Price: $<%=p.getPrice() %></h6>
 						<h6 class="category">Category: <%=p.getCategory() %></h6>
 						<div class="mt-3 d-flex justify-content-between">
-							<a class="btn btn-dark" href="add-to-cart?id=<%=p.getId()%>">Add to Cart</a> <a
-								class="btn btn-primary" href="order-now?quantity=1&id=<%=p.getId()%>">Buy Now</a>
+							<a class="btn btn-dark" href="add-to-cart?id=<%=p.getId()%>">Agregar</a> <a
+								class="btn btn-primary" href="order-now?quantity=1&id=<%=p.getId()%>">Comprar</a>
 						</div>
 					</div>
 				</div>

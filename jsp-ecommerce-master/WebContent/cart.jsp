@@ -31,7 +31,7 @@ if (cart_list != null) {
 <html>
 <head>
 <%@include file="/includes/head.jsp"%>
-<title>E-Commerce Cart</title>
+<title>Carro de Compra</title>
 <style type="text/css">
 
 .table tbody td{
@@ -47,15 +47,15 @@ font-size: 25px;
 	<%@include file="/includes/navbar.jsp"%>
 
 	<div class="container my-3">
-		<div class="d-flex py-3"><h3>Total Price: $ ${(total>0)?dcf.format(total):0} </h3> <a class="mx-3 btn btn-primary" href="cart-check-out">Check Out</a></div>
+		<div class="d-flex py-3"><h3>Total: CLP$ ${(total>0)?dcf.format(total):0} </h3> <a class="mx-3 btn btn-primary" href="cart-check-out">Check Out</a></div>
 		<table class="table table-light">
 			<thead>
 				<tr>
-					<th scope="col">Name</th>
-					<th scope="col">Category</th>
-					<th scope="col">Price</th>
-					<th scope="col">Buy Now</th>
-					<th scope="col">Cancel</th>
+					<th scope="col">Nombre</th>
+					<th scope="col">Categoria</th>
+					<th scope="col">Precio</th>
+					<th scope="col">Comprar Ahora</th>
+					<th scope="col">Cancelar</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -78,7 +78,7 @@ font-size: 25px;
 							<button type="submit" class="btn btn-primary btn-sm">Buy</button>
 						</form>
 					</td>
-					<td><a href="remove-from-cart?id=<%=c.getId() %>" class="btn btn-sm btn-danger">Remove</a></td>
+					<td><a href="remove-from-cart?id=<%=c.getId() %>" class="btn btn-sm btn-danger">Eliminar</a></td>
 				</tr>
 
 				<%
